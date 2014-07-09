@@ -1,0 +1,452 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4931AAA7196D27FD00C610A6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4931AAA6196D27FD00C610A6 /* Foundation.framework */; };
+		4931AAA9196D27FD00C610A6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4931AAA8196D27FD00C610A6 /* CoreGraphics.framework */; };
+		4931AAAB196D27FD00C610A6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4931AAAA196D27FD00C610A6 /* UIKit.framework */; };
+		4931AAB1196D27FD00C610A6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4931AAAF196D27FD00C610A6 /* InfoPlist.strings */; };
+		4931AAB3196D27FD00C610A6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4931AAB2196D27FD00C610A6 /* main.m */; };
+		4931AAB7196D27FD00C610A6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4931AAB6196D27FD00C610A6 /* AppDelegate.m */; };
+		4931AAB9196D27FD00C610A6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4931AAB8196D27FD00C610A6 /* Images.xcassets */; };
+		4931AAC0196D27FD00C610A6 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4931AABF196D27FD00C610A6 /* XCTest.framework */; };
+		4931AAC1196D27FD00C610A6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4931AAA6196D27FD00C610A6 /* Foundation.framework */; };
+		4931AAC2196D27FD00C610A6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4931AAAA196D27FD00C610A6 /* UIKit.framework */; };
+		4931AACA196D27FD00C610A6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4931AAC8196D27FD00C610A6 /* InfoPlist.strings */; };
+		4931AACC196D27FD00C610A6 /* ChiquitoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4931AACB196D27FD00C610A6 /* ChiquitoTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4931AAC3196D27FD00C610A6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4931AA9B196D27FD00C610A6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4931AAA2196D27FD00C610A6;
+			remoteInfo = Chiquito;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4931AAA3196D27FD00C610A6 /* Chiquito.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chiquito.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4931AAA6196D27FD00C610A6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		4931AAA8196D27FD00C610A6 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		4931AAAA196D27FD00C610A6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		4931AAAE196D27FD00C610A6 /* Chiquito-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Chiquito-Info.plist"; sourceTree = "<group>"; };
+		4931AAB0196D27FD00C610A6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4931AAB2196D27FD00C610A6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4931AAB4196D27FD00C610A6 /* Chiquito-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Chiquito-Prefix.pch"; sourceTree = "<group>"; };
+		4931AAB5196D27FD00C610A6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		4931AAB6196D27FD00C610A6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		4931AAB8196D27FD00C610A6 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		4931AABE196D27FD00C610A6 /* ChiquitoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChiquitoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4931AABF196D27FD00C610A6 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		4931AAC7196D27FD00C610A6 /* ChiquitoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ChiquitoTests-Info.plist"; sourceTree = "<group>"; };
+		4931AAC9196D27FD00C610A6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4931AACB196D27FD00C610A6 /* ChiquitoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChiquitoTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4931AAA0196D27FD00C610A6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4931AAA9196D27FD00C610A6 /* CoreGraphics.framework in Frameworks */,
+				4931AAAB196D27FD00C610A6 /* UIKit.framework in Frameworks */,
+				4931AAA7196D27FD00C610A6 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4931AABB196D27FD00C610A6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4931AAC0196D27FD00C610A6 /* XCTest.framework in Frameworks */,
+				4931AAC2196D27FD00C610A6 /* UIKit.framework in Frameworks */,
+				4931AAC1196D27FD00C610A6 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4931AA9A196D27FC00C610A6 = {
+			isa = PBXGroup;
+			children = (
+				4931AAAC196D27FD00C610A6 /* Chiquito */,
+				4931AAC5196D27FD00C610A6 /* ChiquitoTests */,
+				4931AAA5196D27FD00C610A6 /* Frameworks */,
+				4931AAA4196D27FD00C610A6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4931AAA4196D27FD00C610A6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4931AAA3196D27FD00C610A6 /* Chiquito.app */,
+				4931AABE196D27FD00C610A6 /* ChiquitoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4931AAA5196D27FD00C610A6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4931AAA6196D27FD00C610A6 /* Foundation.framework */,
+				4931AAA8196D27FD00C610A6 /* CoreGraphics.framework */,
+				4931AAAA196D27FD00C610A6 /* UIKit.framework */,
+				4931AABF196D27FD00C610A6 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4931AAAC196D27FD00C610A6 /* Chiquito */ = {
+			isa = PBXGroup;
+			children = (
+				4931AAB5196D27FD00C610A6 /* AppDelegate.h */,
+				4931AAB6196D27FD00C610A6 /* AppDelegate.m */,
+				4931AAB8196D27FD00C610A6 /* Images.xcassets */,
+				4931AAAD196D27FD00C610A6 /* Supporting Files */,
+			);
+			path = Chiquito;
+			sourceTree = "<group>";
+		};
+		4931AAAD196D27FD00C610A6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4931AAAE196D27FD00C610A6 /* Chiquito-Info.plist */,
+				4931AAAF196D27FD00C610A6 /* InfoPlist.strings */,
+				4931AAB2196D27FD00C610A6 /* main.m */,
+				4931AAB4196D27FD00C610A6 /* Chiquito-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4931AAC5196D27FD00C610A6 /* ChiquitoTests */ = {
+			isa = PBXGroup;
+			children = (
+				4931AACB196D27FD00C610A6 /* ChiquitoTests.m */,
+				4931AAC6196D27FD00C610A6 /* Supporting Files */,
+			);
+			path = ChiquitoTests;
+			sourceTree = "<group>";
+		};
+		4931AAC6196D27FD00C610A6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4931AAC7196D27FD00C610A6 /* ChiquitoTests-Info.plist */,
+				4931AAC8196D27FD00C610A6 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4931AAA2196D27FD00C610A6 /* Chiquito */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4931AACF196D27FD00C610A6 /* Build configuration list for PBXNativeTarget "Chiquito" */;
+			buildPhases = (
+				4931AA9F196D27FD00C610A6 /* Sources */,
+				4931AAA0196D27FD00C610A6 /* Frameworks */,
+				4931AAA1196D27FD00C610A6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Chiquito;
+			productName = Chiquito;
+			productReference = 4931AAA3196D27FD00C610A6 /* Chiquito.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4931AABD196D27FD00C610A6 /* ChiquitoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4931AAD2196D27FD00C610A6 /* Build configuration list for PBXNativeTarget "ChiquitoTests" */;
+			buildPhases = (
+				4931AABA196D27FD00C610A6 /* Sources */,
+				4931AABB196D27FD00C610A6 /* Frameworks */,
+				4931AABC196D27FD00C610A6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4931AAC4196D27FD00C610A6 /* PBXTargetDependency */,
+			);
+			name = ChiquitoTests;
+			productName = ChiquitoTests;
+			productReference = 4931AABE196D27FD00C610A6 /* ChiquitoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4931AA9B196D27FD00C610A6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = ironhack;
+				TargetAttributes = {
+					4931AABD196D27FD00C610A6 = {
+						TestTargetID = 4931AAA2196D27FD00C610A6;
+					};
+				};
+			};
+			buildConfigurationList = 4931AA9E196D27FD00C610A6 /* Build configuration list for PBXProject "Chiquito" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 4931AA9A196D27FC00C610A6;
+			productRefGroup = 4931AAA4196D27FD00C610A6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4931AAA2196D27FD00C610A6 /* Chiquito */,
+				4931AABD196D27FD00C610A6 /* ChiquitoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4931AAA1196D27FD00C610A6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4931AAB1196D27FD00C610A6 /* InfoPlist.strings in Resources */,
+				4931AAB9196D27FD00C610A6 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4931AABC196D27FD00C610A6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4931AACA196D27FD00C610A6 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4931AA9F196D27FD00C610A6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4931AAB7196D27FD00C610A6 /* AppDelegate.m in Sources */,
+				4931AAB3196D27FD00C610A6 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4931AABA196D27FD00C610A6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4931AACC196D27FD00C610A6 /* ChiquitoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4931AAC4196D27FD00C610A6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4931AAA2196D27FD00C610A6 /* Chiquito */;
+			targetProxy = 4931AAC3196D27FD00C610A6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4931AAAF196D27FD00C610A6 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4931AAB0196D27FD00C610A6 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		4931AAC8196D27FD00C610A6 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4931AAC9196D27FD00C610A6 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4931AACD196D27FD00C610A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		4931AACE196D27FD00C610A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4931AAD0196D27FD00C610A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Chiquito/Chiquito-Prefix.pch";
+				INFOPLIST_FILE = "Chiquito/Chiquito-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		4931AAD1196D27FD00C610A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Chiquito/Chiquito-Prefix.pch";
+				INFOPLIST_FILE = "Chiquito/Chiquito-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		4931AAD3196D27FD00C610A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Chiquito.app/Chiquito";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Chiquito/Chiquito-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "ChiquitoTests/ChiquitoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		4931AAD4196D27FD00C610A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Chiquito.app/Chiquito";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Chiquito/Chiquito-Prefix.pch";
+				INFOPLIST_FILE = "ChiquitoTests/ChiquitoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4931AA9E196D27FD00C610A6 /* Build configuration list for PBXProject "Chiquito" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4931AACD196D27FD00C610A6 /* Debug */,
+				4931AACE196D27FD00C610A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4931AACF196D27FD00C610A6 /* Build configuration list for PBXNativeTarget "Chiquito" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4931AAD0196D27FD00C610A6 /* Debug */,
+				4931AAD1196D27FD00C610A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		4931AAD2196D27FD00C610A6 /* Build configuration list for PBXNativeTarget "ChiquitoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4931AAD3196D27FD00C610A6 /* Debug */,
+				4931AAD4196D27FD00C610A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4931AA9B196D27FD00C610A6 /* Project object */;
+}
