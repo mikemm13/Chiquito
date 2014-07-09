@@ -33,6 +33,7 @@
 		4931AAF0196D7ED000C610A6 /* ImagePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 4931AAEF196D7ED000C610A6 /* ImagePool.m */; };
 		4931AAF3196D878900C610A6 /* SoundEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = 4931AAF2196D878900C610A6 /* SoundEffect.m */; };
 		4931AAF6196D944B00C610A6 /* DeviceHardwareHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 4931AAF5196D944B00C610A6 /* DeviceHardwareHelper.m */; };
+		4931AAF8196D9F9100C610A6 /* Ioputarl.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4931AAF7196D9F9100C610A6 /* Ioputarl.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +82,7 @@
 		4931AAF2196D878900C610A6 /* SoundEffect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoundEffect.m; sourceTree = "<group>"; };
 		4931AAF4196D944B00C610A6 /* DeviceHardwareHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceHardwareHelper.h; sourceTree = "<group>"; };
 		4931AAF5196D944B00C610A6 /* DeviceHardwareHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceHardwareHelper.m; sourceTree = "<group>"; };
+		4931AAF7196D9F9100C610A6 /* Ioputarl.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Ioputarl.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +143,7 @@
 		4931AAAC196D27FD00C610A6 /* Chiquito */ = {
 			isa = PBXGroup;
 			children = (
+				4931AAF7196D9F9100C610A6 /* Ioputarl.wav */,
 				4931AAEC196D7BDE00C610A6 /* Cuidadin.wav */,
 				4931AAEA196D794600C610A6 /* Iiihii.wav */,
 				4931AAE8196D5B0900C610A6 /* Lucas.wav */,
@@ -274,6 +277,7 @@
 				4931AADD196D296400C610A6 /* Pecador.wav in Resources */,
 				4931AADB196D295500C610A6 /* chiquito.jpg in Resources */,
 				4931AAE3196D4A5F00C610A6 /* angryChiquito.jpeg in Resources */,
+				4931AAF8196D9F9100C610A6 /* Ioputarl.wav in Resources */,
 				4931AAE5196D4A9100C610A6 /* chiquitoPensador.jpeg in Resources */,
 				4931AAE7196D4BF500C610A6 /* chiquitoImages.plist in Resources */,
 				4931AAD6196D283400C610A6 /* Chiquito.storyboard in Resources */,

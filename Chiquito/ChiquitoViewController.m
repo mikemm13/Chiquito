@@ -13,12 +13,6 @@
 #import "SoundEffect.h"
 #import "DeviceHardwareHelper.h"
 
-double currentMaxAccelX;
-double currentMaxAccelY;
-double currentMaxAccelZ;
-double currentMaxRotX;
-double currentMaxRotY;
-double currentMaxRotZ;
 
 @interface ChiquitoViewController ()
 
@@ -30,6 +24,7 @@ double currentMaxRotZ;
 @property (strong, nonatomic) CMMotionManager *motionManager;
 @property (strong, nonatomic) ImagePool *imagePool;
 @property (strong, nonatomic) SoundEffect *effect;
+@property (strong, nonatomic) DeviceHardwareHelper *deviceHelper;
 
 
 @end
@@ -45,14 +40,13 @@ double currentMaxRotZ;
     self.imagePool = [[ImagePool alloc] initWithFileName:@"chiquitoImages"];
     self.effect = [[SoundEffect alloc] init];
     self.effect.delegate = self;
-    
-    currentMaxAccelX = 0;
-    currentMaxAccelY = 0;
-    currentMaxAccelZ = 0;
-    
-    currentMaxRotX = 0;
-    currentMaxRotY = 0;
-    currentMaxRotZ = 0;
+    self.deviceHelper = [[DeviceHardwareHelper alloc] init];
+    [self.deviceHelper onProximityEventApproachDoThis:^{
+        [self.effect play:@"Cuidadin"];
+    }];
+    [self.deviceHelper onProximityEventLeavingDoThis:^{
+        [self.effect play:@"Ioputarl"];
+    }];
     
     self.motionManager = [[CMMotionManager alloc] init];
     self.motionManager.accelerometerUpdateInterval = .2;
@@ -70,9 +64,6 @@ double currentMaxRotZ;
     [self.timer fire];
     
     
-    
-    [[UIDevice currentDevice] setProximityMonitoringEnabled:YES];
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(proximityStateChanged) name:UIDeviceProximityStateDidChangeNotification object:nil];
     
     UITapGestureRecognizer *recognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(stopSound)];
     recognizer.numberOfTapsRequired = 2;
@@ -95,20 +86,13 @@ double currentMaxRotZ;
     return _timer;
 }
 
-
-
-
 - (void) initTimer{
     [self.timer fire];
 }
 
 - (void)reproduceSound{
-    NSLog(@"Pecador!!!!");
     
     [self.effect play:@"Lucas"];
-//    self.player.delegate = self;
-    
-    
     [DeviceHardwareHelper vibrate];
     [DeviceHardwareHelper torchOn];
     
@@ -131,8 +115,6 @@ double currentMaxRotZ;
 
 - (void)motionEnded:(UIEventSubtype)motion withEvent:(UIEvent *)event{
     if (motion == UIEventSubtypeMotionShake) {
-        NSLog(@"shake");
-        
         UIImage *img = [self.imagePool nextImage];
         self.imageView.image = img;
         [self.effect play:@"Iiihii"];
@@ -142,12 +124,10 @@ double currentMaxRotZ;
 
 -(void)outputAccelertionData:(CMAcceleration)acceleration
 {
-    
     if(acceleration.z > 0.95 && acceleration.z < 1.05)
     {
         [self stopSound];
     }
-    
 }
 
 - (void) useCamera:(id)sender
@@ -188,7 +168,6 @@ double currentMaxRotZ;
 }
 
 
-
 -(void)imagePickerController:(UIImagePickerController *)picker
 didFinishPickingMediaWithInfo:(NSDictionary *)info
 {
@@ -208,8 +187,6 @@ didFinishPickingMediaWithInfo:(NSDictionary *)info
 }
 
 - (void)proximityStateChanged{
-    NSLog(@"Sensor");
-    
     [self.effect play:@"Cuidadin"];
 }
 
