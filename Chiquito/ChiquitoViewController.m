@@ -8,6 +8,7 @@
 
 #import "ChiquitoViewController.h"
 #import <AVFoundation/AVFoundation.h>
+#import <AudioToolbox/AudioToolbox.h>
 
 @interface ChiquitoViewController ()
 
@@ -45,6 +46,8 @@
     AVAudioPlayer *p = [[AVAudioPlayer alloc] initWithData:soundData error:&err];
     self.player = p;
     [self.player play];
+    
+    AudioServicesPlaySystemSound(kSystemSoundID_Vibrate);
 
     
 }
