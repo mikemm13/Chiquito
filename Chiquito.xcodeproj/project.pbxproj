@@ -30,6 +30,7 @@
 		4931AAE9196D5B0900C610A6 /* Lucas.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4931AAE8196D5B0900C610A6 /* Lucas.wav */; };
 		4931AAEB196D794600C610A6 /* Iiihii.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4931AAEA196D794600C610A6 /* Iiihii.wav */; };
 		4931AAED196D7BDE00C610A6 /* Cuidadin.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4931AAEC196D7BDE00C610A6 /* Cuidadin.wav */; };
+		4931AAF0196D7ED000C610A6 /* ImagePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 4931AAEF196D7ED000C610A6 /* ImagePool.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +73,8 @@
 		4931AAE8196D5B0900C610A6 /* Lucas.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Lucas.wav; sourceTree = "<group>"; };
 		4931AAEA196D794600C610A6 /* Iiihii.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Iiihii.wav; sourceTree = "<group>"; };
 		4931AAEC196D7BDE00C610A6 /* Cuidadin.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Cuidadin.wav; sourceTree = "<group>"; };
+		4931AAEE196D7ED000C610A6 /* ImagePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImagePool.h; sourceTree = "<group>"; };
+		4931AAEF196D7ED000C610A6 /* ImagePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImagePool.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +150,8 @@
 				4931AAAD196D27FD00C610A6 /* Supporting Files */,
 				4931AAD7196D285A00C610A6 /* ChiquitoViewController.h */,
 				4931AAD8196D285A00C610A6 /* ChiquitoViewController.m */,
+				4931AAEE196D7ED000C610A6 /* ImagePool.h */,
+				4931AAEF196D7ED000C610A6 /* ImagePool.m */,
 			);
 			path = Chiquito;
 			sourceTree = "<group>";
@@ -289,6 +294,7 @@
 				4931AAB7196D27FD00C610A6 /* AppDelegate.m in Sources */,
 				4931AAD9196D285A00C610A6 /* ChiquitoViewController.m in Sources */,
 				4931AAB3196D27FD00C610A6 /* main.m in Sources */,
+				4931AAF0196D7ED000C610A6 /* ImagePool.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -11,6 +11,7 @@
 #import <AudioToolbox/AudioToolbox.h>
 #import <CoreMotion/CoreMotion.h>
 #import <MobileCoreServices/MobileCoreServices.h>
+#import "ImagePool.h"
 
 double currentMaxAccelX;
 double currentMaxAccelY;
@@ -24,9 +25,10 @@ double currentMaxRotZ;
 @property (strong, nonatomic) NSTimer *timer;
 @property (strong, nonatomic) AVAudioPlayer *player;
 @property (strong, nonatomic) AVCaptureDevice *device;
-@property (strong, nonatomic) NSArray *images;
+
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
 @property (strong, nonatomic) CMMotionManager *motionManager;
+@property (strong, nonatomic) ImagePool *imagePool;
 
 
 @end
@@ -38,6 +40,9 @@ double currentMaxRotZ;
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    self.imagePool = [[ImagePool alloc] initWithFileName:@"chiquitoImages"];
+    
     currentMaxAccelX = 0;
     currentMaxAccelY = 0;
     currentMaxAccelZ = 0;
@@ -87,13 +92,8 @@ double currentMaxRotZ;
     return _timer;
 }
 
-- (NSArray *)images{
-    if (!_images) {
-        NSString *filePath = [[NSBundle mainBundle] pathForResource:@"chiquitoImages" ofType:@"plist"];
-        _images = [NSArray arrayWithContentsOfFile:filePath];
-    }
-    return _images;
-}
+
+
 
 - (void) initTimer{
     [self.timer fire];
@@ -142,8 +142,10 @@ double currentMaxRotZ;
 - (void)motionEnded:(UIEventSubtype)motion withEvent:(UIEvent *)event{
     if (motion == UIEventSubtypeMotionShake) {
         NSLog(@"shake");
-        NSInteger index = arc4random()%4;
-        self.imageView.image = [UIImage imageNamed:self.images[index]];
+        
+        UIImage *img = [self.imagePool nextImage];
+        self.imageView.image = img;
+        
         NSString *filePath = [[NSBundle mainBundle] pathForResource:@"Iiihii"ofType:@"wav"];
         NSError *err = nil;
         NSData *soundData = [[NSData alloc] initWithContentsOfFile:filePath options:NSDataReadingMapped error:&err];
