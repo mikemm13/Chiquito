@@ -75,6 +75,9 @@ double currentMaxRotZ;
     UISwipeGestureRecognizer *leftRecognizer = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(useCameraRoll:)];
     leftRecognizer.direction = UISwipeGestureRecognizerDirectionLeft;
     [self.view addGestureRecognizer:leftRecognizer];
+    UISwipeGestureRecognizer *downRecognizer = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(initTimer)];
+    downRecognizer.direction = UISwipeGestureRecognizerDirectionDown;
+    [self.view addGestureRecognizer:downRecognizer];
 
 }
 
@@ -91,6 +94,10 @@ double currentMaxRotZ;
         _images = [NSArray arrayWithContentsOfFile:filePath];
     }
     return _images;
+}
+
+- (void) initTimer{
+    [self.timer fire];
 }
 
 - (void)reproduceSound{
@@ -143,10 +150,6 @@ double currentMaxRotZ;
     if(acceleration.z > 0.95 && acceleration.z < 1.05)
     {
         [self stopSound];
-    } else {
-        if (![self.player isPlaying]) {
-            [[self timer] fire];
-        }
     }
     
 }
