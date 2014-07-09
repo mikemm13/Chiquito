@@ -41,11 +41,14 @@
     self.effect = [[SoundEffect alloc] init];
     self.effect.delegate = self;
     self.deviceHelper = [[DeviceHardwareHelper alloc] init];
+    
+    __weak typeof(self) weakSelf = self;
+    
     [self.deviceHelper onProximityEventApproachDoThis:^{
-        [self.effect play:@"Cuidadin"];
+        [weakSelf.effect play:@"Cuidadin"];
     }];
     [self.deviceHelper onProximityEventLeavingDoThis:^{
-        [self.effect play:@"Ioputarl"];
+        [weakSelf.effect play:@"Ioputarl"];
     }];
     
     self.motionManager = [[CMMotionManager alloc] init];
