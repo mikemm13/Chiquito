@@ -28,6 +28,8 @@
 		4931AAE5196D4A9100C610A6 /* chiquitoPensador.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 4931AAE4196D4A9100C610A6 /* chiquitoPensador.jpeg */; };
 		4931AAE7196D4BF500C610A6 /* chiquitoImages.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4931AAE6196D4BF500C610A6 /* chiquitoImages.plist */; };
 		4931AAE9196D5B0900C610A6 /* Lucas.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4931AAE8196D5B0900C610A6 /* Lucas.wav */; };
+		4931AAEB196D794600C610A6 /* Iiihii.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4931AAEA196D794600C610A6 /* Iiihii.wav */; };
+		4931AAED196D7BDE00C610A6 /* Cuidadin.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4931AAEC196D7BDE00C610A6 /* Cuidadin.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +70,8 @@
 		4931AAE4196D4A9100C610A6 /* chiquitoPensador.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chiquitoPensador.jpeg; sourceTree = "<group>"; };
 		4931AAE6196D4BF500C610A6 /* chiquitoImages.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = chiquitoImages.plist; sourceTree = "<group>"; };
 		4931AAE8196D5B0900C610A6 /* Lucas.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Lucas.wav; sourceTree = "<group>"; };
+		4931AAEA196D794600C610A6 /* Iiihii.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Iiihii.wav; sourceTree = "<group>"; };
+		4931AAEC196D7BDE00C610A6 /* Cuidadin.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Cuidadin.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +132,8 @@
 		4931AAAC196D27FD00C610A6 /* Chiquito */ = {
 			isa = PBXGroup;
 			children = (
+				4931AAEC196D7BDE00C610A6 /* Cuidadin.wav */,
+				4931AAEA196D794600C610A6 /* Iiihii.wav */,
 				4931AAE8196D5B0900C610A6 /* Lucas.wav */,
 				4931AAE4196D4A9100C610A6 /* chiquitoPensador.jpeg */,
 				4931AAE0196D4A5F00C610A6 /* chiquitoJarl.jpeg */,
@@ -257,7 +263,9 @@
 				4931AAE7196D4BF500C610A6 /* chiquitoImages.plist in Resources */,
 				4931AAD6196D283400C610A6 /* Chiquito.storyboard in Resources */,
 				4931AAB1196D27FD00C610A6 /* InfoPlist.strings in Resources */,
+				4931AAEB196D794600C610A6 /* Iiihii.wav in Resources */,
 				4931AAE2196D4A5F00C610A6 /* chiquitoJarl.jpeg in Resources */,
+				4931AAED196D7BDE00C610A6 /* Cuidadin.wav in Resources */,
 				4931AAB9196D27FD00C610A6 /* Images.xcassets in Resources */,
 				4931AAE9196D5B0900C610A6 /* Lucas.wav in Resources */,
 			);

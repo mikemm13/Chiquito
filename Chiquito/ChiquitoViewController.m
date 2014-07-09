@@ -61,12 +61,11 @@ double currentMaxRotZ;
     
     [self.timer fire];
     
-    NSString *filePath = [[NSBundle mainBundle] pathForResource:@"Lucas"ofType:@"wav"];
-    NSError *err = nil;
-    NSData *soundData = [[NSData alloc] initWithContentsOfFile:filePath options:NSDataReadingMapped error:&err];
-    AVAudioPlayer *p = [[AVAudioPlayer alloc] initWithData:soundData error:&err];
-    self.player = p;
-    self.player.delegate = self;
+    
+    
+    [[UIDevice currentDevice] setProximityMonitoringEnabled:YES];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(proximityStateChanged) name:UIDeviceProximityStateDidChangeNotification object:nil];
+    
     UITapGestureRecognizer *recognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(stopSound)];
     recognizer.numberOfTapsRequired = 2;
     [self.view addGestureRecognizer:recognizer];
@@ -103,7 +102,12 @@ double currentMaxRotZ;
 - (void)reproduceSound{
     NSLog(@"Pecador!!!!");
     
-    
+    NSString *filePath = [[NSBundle mainBundle] pathForResource:@"Lucas"ofType:@"wav"];
+    NSError *err = nil;
+    NSData *soundData = [[NSData alloc] initWithContentsOfFile:filePath options:NSDataReadingMapped error:&err];
+    AVAudioPlayer *p = [[AVAudioPlayer alloc] initWithData:soundData error:&err];
+    self.player = p;
+    self.player.delegate = self;
     
     [self.player play];
     
@@ -140,6 +144,12 @@ double currentMaxRotZ;
         NSLog(@"shake");
         NSInteger index = arc4random()%4;
         self.imageView.image = [UIImage imageNamed:self.images[index]];
+        NSString *filePath = [[NSBundle mainBundle] pathForResource:@"Iiihii"ofType:@"wav"];
+        NSError *err = nil;
+        NSData *soundData = [[NSData alloc] initWithContentsOfFile:filePath options:NSDataReadingMapped error:&err];
+        self.player = [[AVAudioPlayer alloc] initWithData:soundData error:&err];
+        [self.player play];
+        self.player.delegate = self;
     }
 }
 
@@ -209,6 +219,17 @@ didFinishPickingMediaWithInfo:(NSDictionary *)info
     {
         // Code here to support video if enabled
     }
+}
+
+- (void)proximityStateChanged{
+    NSLog(@"Sensor");
+    NSString *filePath = [[NSBundle mainBundle] pathForResource:@"Cuidadin"ofType:@"wav"];
+    NSError *err = nil;
+    NSData *soundData = [[NSData alloc] initWithContentsOfFile:filePath options:NSDataReadingMapped error:&err];
+    AVAudioPlayer *p = [[AVAudioPlayer alloc] initWithData:soundData error:&err];
+    self.player = p;
+    self.player.delegate = self;
+    [self.player play];
 }
 
 
