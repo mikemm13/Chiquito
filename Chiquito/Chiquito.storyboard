@@ -16,13 +16,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="he_5.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="YKh-xb-lIi">
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="chiquito.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="YKh-xb-lIi">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="481"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="imageView" destination="YKh-xb-lIi" id="1dC-5L-Cme"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hYC-0y-QFL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -30,7 +33,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="he_5.jpg" width="650" height="1234"/>
+        <image name="chiquito.jpg" width="650" height="1234"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>

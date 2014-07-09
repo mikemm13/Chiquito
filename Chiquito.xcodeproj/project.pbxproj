@@ -21,8 +21,12 @@
 		4931AACC196D27FD00C610A6 /* ChiquitoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4931AACB196D27FD00C610A6 /* ChiquitoTests.m */; };
 		4931AAD6196D283400C610A6 /* Chiquito.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4931AAD5196D283400C610A6 /* Chiquito.storyboard */; };
 		4931AAD9196D285A00C610A6 /* ChiquitoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4931AAD8196D285A00C610A6 /* ChiquitoViewController.m */; };
-		4931AADB196D295500C610A6 /* he_5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4931AADA196D295500C610A6 /* he_5.jpg */; };
+		4931AADB196D295500C610A6 /* chiquito.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4931AADA196D295500C610A6 /* chiquito.jpg */; };
 		4931AADD196D296400C610A6 /* Pecador.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4931AADC196D296400C610A6 /* Pecador.wav */; };
+		4931AAE2196D4A5F00C610A6 /* chiquitoJarl.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 4931AAE0196D4A5F00C610A6 /* chiquitoJarl.jpeg */; };
+		4931AAE3196D4A5F00C610A6 /* angryChiquito.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 4931AAE1196D4A5F00C610A6 /* angryChiquito.jpeg */; };
+		4931AAE5196D4A9100C610A6 /* chiquitoPensador.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 4931AAE4196D4A9100C610A6 /* chiquitoPensador.jpeg */; };
+		4931AAE7196D4BF500C610A6 /* chiquitoImages.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4931AAE6196D4BF500C610A6 /* chiquitoImages.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,9 +59,13 @@
 		4931AAD5196D283400C610A6 /* Chiquito.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Chiquito.storyboard; sourceTree = "<group>"; };
 		4931AAD7196D285A00C610A6 /* ChiquitoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChiquitoViewController.h; sourceTree = "<group>"; };
 		4931AAD8196D285A00C610A6 /* ChiquitoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChiquitoViewController.m; sourceTree = "<group>"; };
-		4931AADA196D295500C610A6 /* he_5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = he_5.jpg; sourceTree = "<group>"; };
+		4931AADA196D295500C610A6 /* chiquito.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chiquito.jpg; sourceTree = "<group>"; };
 		4931AADC196D296400C610A6 /* Pecador.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Pecador.wav; sourceTree = "<group>"; };
 		4931AADE196D2CC800C610A6 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		4931AAE0196D4A5F00C610A6 /* chiquitoJarl.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chiquitoJarl.jpeg; sourceTree = "<group>"; };
+		4931AAE1196D4A5F00C610A6 /* angryChiquito.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = angryChiquito.jpeg; sourceTree = "<group>"; };
+		4931AAE4196D4A9100C610A6 /* chiquitoPensador.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chiquitoPensador.jpeg; sourceTree = "<group>"; };
+		4931AAE6196D4BF500C610A6 /* chiquitoImages.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = chiquitoImages.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,8 +126,11 @@
 		4931AAAC196D27FD00C610A6 /* Chiquito */ = {
 			isa = PBXGroup;
 			children = (
+				4931AAE4196D4A9100C610A6 /* chiquitoPensador.jpeg */,
+				4931AAE0196D4A5F00C610A6 /* chiquitoJarl.jpeg */,
+				4931AAE1196D4A5F00C610A6 /* angryChiquito.jpeg */,
 				4931AADC196D296400C610A6 /* Pecador.wav */,
-				4931AADA196D295500C610A6 /* he_5.jpg */,
+				4931AADA196D295500C610A6 /* chiquito.jpg */,
 				4931AAB5196D27FD00C610A6 /* AppDelegate.h */,
 				4931AAB6196D27FD00C610A6 /* AppDelegate.m */,
 				4931AAB8196D27FD00C610A6 /* Images.xcassets */,
@@ -138,6 +149,7 @@
 				4931AAAF196D27FD00C610A6 /* InfoPlist.strings */,
 				4931AAB2196D27FD00C610A6 /* main.m */,
 				4931AAB4196D27FD00C610A6 /* Chiquito-Prefix.pch */,
+				4931AAE6196D4BF500C610A6 /* chiquitoImages.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -236,9 +248,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				4931AADD196D296400C610A6 /* Pecador.wav in Resources */,
-				4931AADB196D295500C610A6 /* he_5.jpg in Resources */,
+				4931AADB196D295500C610A6 /* chiquito.jpg in Resources */,
+				4931AAE3196D4A5F00C610A6 /* angryChiquito.jpeg in Resources */,
+				4931AAE5196D4A9100C610A6 /* chiquitoPensador.jpeg in Resources */,
+				4931AAE7196D4BF500C610A6 /* chiquitoImages.plist in Resources */,
 				4931AAD6196D283400C610A6 /* Chiquito.storyboard in Resources */,
 				4931AAB1196D27FD00C610A6 /* InfoPlist.strings in Resources */,
+				4931AAE2196D4A5F00C610A6 /* chiquitoJarl.jpeg in Resources */,
 				4931AAB9196D27FD00C610A6 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
