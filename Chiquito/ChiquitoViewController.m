@@ -12,6 +12,7 @@
 #import <CoreMotion/CoreMotion.h>
 #import <MobileCoreServices/MobileCoreServices.h>
 #import "ImagePool.h"
+#import "SoundEffect.h"
 
 double currentMaxAccelX;
 double currentMaxAccelY;
@@ -23,12 +24,13 @@ double currentMaxRotZ;
 @interface ChiquitoViewController ()
 
 @property (strong, nonatomic) NSTimer *timer;
-@property (strong, nonatomic) AVAudioPlayer *player;
+
 @property (strong, nonatomic) AVCaptureDevice *device;
 
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
 @property (strong, nonatomic) CMMotionManager *motionManager;
 @property (strong, nonatomic) ImagePool *imagePool;
+@property (strong, nonatomic) SoundEffect *effect;
 
 
 @end
@@ -42,6 +44,8 @@ double currentMaxRotZ;
     // Do any additional setup after loading the view.
     
     self.imagePool = [[ImagePool alloc] initWithFileName:@"chiquitoImages"];
+    self.effect = [[SoundEffect alloc] init];
+    self.effect.delegate = self;
     
     currentMaxAccelX = 0;
     currentMaxAccelY = 0;
@@ -102,14 +106,9 @@ double currentMaxRotZ;
 - (void)reproduceSound{
     NSLog(@"Pecador!!!!");
     
-    NSString *filePath = [[NSBundle mainBundle] pathForResource:@"Lucas"ofType:@"wav"];
-    NSError *err = nil;
-    NSData *soundData = [[NSData alloc] initWithContentsOfFile:filePath options:NSDataReadingMapped error:&err];
-    AVAudioPlayer *p = [[AVAudioPlayer alloc] initWithData:soundData error:&err];
-    self.player = p;
-    self.player.delegate = self;
+    [self.effect play:@"Lucas"];
+//    self.player.delegate = self;
     
-    [self.player play];
     
     AudioServicesPlaySystemSound(kSystemSoundID_Vibrate);
     
@@ -120,7 +119,7 @@ double currentMaxRotZ;
     
 }
 
-- (void)audioPlayerDidFinishPlaying:(AVAudioPlayer *)player successfully:(BOOL)flag{
+- (void)soundEffectDidFinishPlaying:(SoundEffect *)soundEffect{
     [self.device lockForConfiguration:nil];
     [self.device setTorchMode: AVCaptureTorchModeOff];
     [self.device unlockForConfiguration];
@@ -145,13 +144,7 @@ double currentMaxRotZ;
         
         UIImage *img = [self.imagePool nextImage];
         self.imageView.image = img;
-        
-        NSString *filePath = [[NSBundle mainBundle] pathForResource:@"Iiihii"ofType:@"wav"];
-        NSError *err = nil;
-        NSData *soundData = [[NSData alloc] initWithContentsOfFile:filePath options:NSDataReadingMapped error:&err];
-        self.player = [[AVAudioPlayer alloc] initWithData:soundData error:&err];
-        [self.player play];
-        self.player.delegate = self;
+        [self.effect play:@"Iiihii"];
     }
 }
 
@@ -225,13 +218,8 @@ didFinishPickingMediaWithInfo:(NSDictionary *)info
 
 - (void)proximityStateChanged{
     NSLog(@"Sensor");
-    NSString *filePath = [[NSBundle mainBundle] pathForResource:@"Cuidadin"ofType:@"wav"];
-    NSError *err = nil;
-    NSData *soundData = [[NSData alloc] initWithContentsOfFile:filePath options:NSDataReadingMapped error:&err];
-    AVAudioPlayer *p = [[AVAudioPlayer alloc] initWithData:soundData error:&err];
-    self.player = p;
-    self.player.delegate = self;
-    [self.player play];
+    
+    [self.effect play:@"Cuidadin"];
 }
 
 
