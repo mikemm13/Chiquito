@@ -7,12 +7,11 @@
 //
 
 #import "ChiquitoViewController.h"
-#import <AVFoundation/AVFoundation.h>
-#import <AudioToolbox/AudioToolbox.h>
 #import <CoreMotion/CoreMotion.h>
 #import <MobileCoreServices/MobileCoreServices.h>
 #import "ImagePool.h"
 #import "SoundEffect.h"
+#import "DeviceHardwareHelper.h"
 
 double currentMaxAccelX;
 double currentMaxAccelY;
@@ -110,28 +109,20 @@ double currentMaxRotZ;
 //    self.player.delegate = self;
     
     
-    AudioServicesPlaySystemSound(kSystemSoundID_Vibrate);
-    
-    self.device = [AVCaptureDevice defaultDeviceWithMediaType:AVMediaTypeVideo];
-    [self.device lockForConfiguration:nil];
-    [self.device setTorchMode: AVCaptureTorchModeOn];
-    [self.device unlockForConfiguration];
+    [DeviceHardwareHelper vibrate];
+    [DeviceHardwareHelper torchOn];
     
 }
 
 - (void)soundEffectDidFinishPlaying:(SoundEffect *)soundEffect{
-    [self.device lockForConfiguration:nil];
-    [self.device setTorchMode: AVCaptureTorchModeOff];
-    [self.device unlockForConfiguration];
+    [DeviceHardwareHelper torchOff];
 }
 
 
 - (void)stopSound {
     [self.timer invalidate];
     self.timer = nil;
-    [self.device lockForConfiguration:nil];
-    [self.device setTorchMode: AVCaptureTorchModeOff];
-    [self.device unlockForConfiguration];
+    [DeviceHardwareHelper torchOff];
 }
 
 - (BOOL)canBecomeFirstResponder{
