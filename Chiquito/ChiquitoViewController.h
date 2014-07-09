@@ -9,6 +9,6 @@
 #import <UIKit/UIKit.h>
 #import <AVFoundation/AVFoundation.h>
 
-@interface ChiquitoViewController : UIViewController <AVAudioPlayerDelegate>
+@interface ChiquitoViewController : UIViewController <AVAudioPlayerDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UIImagePickerControllerDelegate>
 
 @end
